@@ -19,6 +19,7 @@
 \usepackage{tcolorbox}
 \usepackage[colorlinks=false,hidelinks]{hyperref} %%% Make this the last package to be loaded! %% included for a clickable toc.
 \usepackage{subcaption}
+\usepackage{textcomp}
 \linespread{1.25}
 
 \begin{document}
@@ -109,8 +110,71 @@ A less common but more severe defect would be the complete unetching of the aven
 
 
 \section{Spectral Measurements}
-Experimental measurements of the mesh filters were made at 95 and 150 GHz using a polarizing Fourier Transform Spectrometer. 
+The bulk of the spectral measurements of the mesh filters were done using
+Fourier Transform Spectroscopy.
 
+\subsection{Introduction to Fourier Transform Spectroscopy}
+
+
+\subsection{Experimental Setup}
+Experimental measurements of the mesh filters were made at 95 and 150 GHz using
+a polarizing Fourier Transform Spectrometer. The FTS was built on a 4 by 8 feet
+optical bench and has two 11" square plane mirrors. The collimator and camera
+are both built out of oversized off-axis paraboloids. The sources for these tests
+were a 95GHz and a 150GHz noise source with locally machined feedhorns. Bandpass
+filters were added to the source to define the measurement band. The filters
+gave a bandwidth of about 15GHz for both sources centered at 95GHz and 150GHz.  The
+sources are polarized were always aligned horizontally. The detector consists of a commercial rectangular
+feedhorn that feeds into a diode whose signal is sent to an SRS Lockin
+Amplifier. Care was taken to ensure that the detector was at the focus of the
+optical train to maximize the signal to noise ratio. The Lockin Amp is used to generate a chopping signal at a frequency
+of about 13KHz that is used to control an RF switch in the noise source. This
+chopping signal modulates the signal in the system. The FTS uses a 7mm Mylar
+beam splitter. The reflective surfaces of the setup that were away from the
+optical path were covered with layers of eccosorb coated on the backside with
+reflective aluminum tape to absorb stray reflections. A schematic of the FTS
+system is shown in Figure TODO: The length of the FTS track was about 500mm. The
+motion of the mirror was controlled by a stepper motor that was linked to a
+LabView Control System while the position of the moving mirror was recorded on
+an encoder. The mirror scanned about 180mm from the center position in both
+directions. However for each scan, the mirror was started at the extreme
+position and scanned through the center position to the other extreme. The
+stepper motor drived the mirror in steps of about 0.12mm. 
+
+For these measurements 6" samples of the full aperture mesh filters were
+prepared by transferring portions of the larger mesh onto smaller rings. This
+was done in order to make independent measurements of multiple sections of the
+filters as well as for ease of handling during the experimental procedure.
+During the transfer process care was taken to ensure that the alignment of the
+two grid axes was preserved. In addition we ensured that no additional
+tensioning of the filter film was done during the transfer.
+
+In order to measure the transmission, absorption and scattering as well as the
+reflectance of the mesh filters, pairs of 6" mesh filters were mounted as
+etalons with a spacing of about 2.25" between the mesh surfaces. In later
+measurements, the spacing between the filters was adjusted to 3.25" to obtain a
+second set of measurements and better constrain systematics of the measurement.
+During the construction of the etalon the Y and X axis of the two filters were
+always aligned with each other. For each etalon, we made two independent sets of
+measurements with the Y axis and the X axis aligned with the polarization
+direction of the source respectively.
+
+During testing, the filter etalon was placed in the beam before the beam
+splitter. The collimator was chosen to have an aperture of 5", slightly smaller
+than the diameter of the filters. This was done in order to prevent specular
+reflection of the beam off the aluminum rings supporting the filters. Such
+effects would introduce spurious signals into the data that would be hard to
+account for fully. In addition, the filter etalon was titled at a shallow
+3\textdegree angle. This was done to prevent the formation of secondary Fabry
+Perot cavities between the mesh filter surface and an optical surface such as
+the collimator. The mesh filter etalon was mounted on a sliding track to
+alternately move the sample into and out of the beam.
+
+The data collecting routine consisted of first taken one-arm scans with the
+fixed mirror covered with a thick piece of eccosorb. These one-arm scans were
+taken with the sample not in the beam path and additionally with the sample in
+the beam path. About 6 such scans were taken in total.  
+\subsection{Analysis} 
 The goal is to characterize our mesh filters in the 95, 150, 220 GHz bands. In order to do this, FTS measurements of mesh filter etalons were done at 95 and 150 GHz. The mesh filters are being sent to Harvard for measurements at 220GHz. From the FTS measurements, we extracted the attenuation due to loss + scattering (A), reflectance (R) and transmission (T) of the filters. Keith has a great discussion of the working of the FTS setup we have in the lab in his logbook entry on Alumina Tests. There is also a discussion on FTS measurements of mesh filters that was written as part of the mesh filter testing for BICEP3 last season here. For my analysis, I found the reference book: Introduction to Fourier Transform Spectroscopy by Robert John Bell to be particularly useful in the analysis.
 For this analysis, two mesh filters were selected: The first was 18-01 which is a 15/40 single sided filter brought back from the Pole by Jae Hwan. From turntable tests done at Pole, 18-01 showed a 1-2\% polarization in the 2 θ co-polar response. The second filter selected for FTS testing wa s15-02 which is a double sided BOPP 15/40 filter. In addition, I will be testing 23-01 which is the 15/40 filter that showed a 5\% polarization effect in the 2 θ co-polar response from turntable tests at the south pole. I will be discussing the comparison between the turntable and the FTS results later in this posting.
 
